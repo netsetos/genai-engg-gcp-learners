@@ -1,0 +1,62 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+service-account*.json
+*-sa-key*.json
+*-credentials*.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# IDE
+.idea/
+.vscode/
+*.code-workspace
+
+# Claude Code state
+.claude/
+
+# GCP / Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Build / cache
+*.zip
+*.tar.gz
+node_modules/
+dist/
+build/
+.cache/
+
+# Logs
+*.log
+
+# Local data downloads from notebooks (often large)
+data/cache/
+*.parquet
+*.bin
+*.safetensors
+*.pkl
+*.h5
+*.pt

@@ -1,0 +1,31 @@
+# Base dependencies for the GenAI on GCP capstone.
+# Lesson-specific heavy packages (google-adk, fastmcp, vllm, streamlit,
+# bigframes, google-cloud-discoveryengine, etc.) are installed in each
+# notebook's first cell with `!pip install -q ...`.
+
+# === Vertex AI / Gemini SDKs ===
+google-genai>=1.56,<2.0          # Unified Gemini SDK (the modern one)
+google-cloud-aiplatform>=1.136   # Vertex AI Pipelines, MLOps, RAG Engine, Tuning
+google-cloud-firestore>=2.26     # Documents + vector search
+google-cloud-storage>=2.19       # Cloud Storage (data lake, models, logs)
+google-cloud-bigquery>=3.41      # BigQuery analytics + BQML
+google-cloud-secret-manager>=2.24
+google-cloud-logging>=3.14
+
+# === Auth / config ===
+python-dotenv>=1.0.0
+
+# === Data ===
+pandas>=2.0
+numpy>=1.26
+scipy>=1.11
+
+# === Notebook tooling ===
+jupyter
+ipykernel
+ipywidgets
+
+# === Utilities used in multiple notebooks ===
+pydantic>=2.0
+requests>=2.31
+Pillow>=10.0
